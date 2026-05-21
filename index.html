@@ -74,6 +74,8 @@ body {
   .icon{width:22px;height:22px;flex:0 0 22px;fill:#1d4795; display: flex; align-items: center; justify-content: center;}
   .label{flex:1;text-align:center}
 
+.link.menu:hover { background: rgba(255, 106, 0, 0.15); color: #ff6a00; }
+.link.menu:hover .icon i { color: #ff6a00; }
 .link.location:hover { background: rgba(234, 67, 53, 0.2); color: #EA4335; }
 .link.location:hover .icon i { color: #EA4335; }
 .link.whatsapp:hover { background: rgba(37, 211, 102, 0.2); color: #25D366; }
@@ -101,6 +103,7 @@ body {
 }
 
 .social-icons a:hover { transform: scale(1.2); }
+.social-icons a.menu:hover { color: #ff6a00; }
 .social-icons a.location:hover { color: #EA4335; }
 .social-icons a[href*="wa.me"]:hover { color: #25D366; }
 .social-icons a.phone:hover { color: #34b7f1; }
@@ -186,7 +189,6 @@ h1 {
 <body dir="ltr">
 
   <div class="wrap">
-    <!-- يمكنك استبدال رابط الصورة الافتراضية برابط شعار المطعم الخاص بك لاحقاً -->
     <img class="profile-pic" src="https://ik.imagekit.io/GotoLink/Links/LogoAlina.png" alt="ALINA Restaurant" />
     
     <div class="info-section">
@@ -211,6 +213,12 @@ h1 {
     </div>
 
     <nav class="links">
+
+      <!-- زر المنيو الجديد -->
+      <a class="link menu" href="https://ik.imagekit.io/GotoLink/Links/Alina.menu.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="icon"><i class="fas fa-utensils"></i></div>
+          <span class="label" id="btn-menu">Menu</span>
+      </a>
       
       <a class="link location" href="https://maps.app.goo.gl/qW8ZFaekXdQZF2su5?g_st=aw" target="_blank" rel="noopener noreferrer">
           <div class="icon"><i class="fas fa-location-dot"></i></div>
@@ -230,6 +238,7 @@ h1 {
     </nav>
 
     <div class="social-icons">
+        <a href="https://ik.imagekit.io/GotoLink/Links/Alina.menu.pdf" target="_blank" class="menu" title="Menu"><i class="fas fa-book-open"></i></a>
         <a href="https://maps.app.goo.gl/qW8ZFaekXdQZF2su5?g_st=aw" target="_blank"><i class="fas fa-location-dot"></i></a>
         <a href="https://wa.me/+31687127874" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a href="tel:+31687127874"><i class="fas fa-phone"></i></a>
@@ -245,47 +254,47 @@ h1 {
 const translations = {
     nl: {
         title: "ALINA Restaurant", tagline: "Catering en <span>Evenementen</span>", desc: "Afghaans ALL YOU CAN EAT Buffet Restaurant",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Bel Ons", dir: "ltr"
+        menu: "Restaurant Menu", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Bel Ons", dir: "ltr"
     },
     en: {
         title: "ALINA Restaurant", tagline: "Catering and <span>Events</span>", desc: "Afghan ALL YOU CAN EAT Buffet Restaurant",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Call Us", dir: "ltr"
+        menu: "Restaurant Menu", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Call Us", dir: "ltr"
     },
     ar: {
         title: "مطعم ألينا", tagline: "كاترينج <span>ومناسبات</span>", desc: "بوفيه مفتوح للمأكولات الأفغانية - كُل ما تشتهي",
-        loc: "نيو ستريت 7، بيركل إن رودنريس", wa: "واتساب", call: "اتصل بنا", dir: "rtl"
+        menu: "قائمة الطعام (المنيو)", loc: "نيو ستريت 7، بيركل إن رودنريس", wa: "واتساب", call: "اتصل بنا", dir: "rtl"
     },
     fr: {
         title: "ALINA Restaurant", tagline: "Restauration et <span>Événements</span>", desc: "Restaurant Buffet Afghan À VOLONTÉ",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Appelez-nous", dir: "ltr"
+        menu: "Menu du Restaurant", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Appelez-nous", dir: "ltr"
     },
     de: {
         title: "ALINA Restaurant", tagline: "Catering und <span>Events</span>", desc: "Afghanisches ALL YOU CAN EAT Buffet Restaurant",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Anrufen", dir: "ltr"
+        menu: "Speisekarte", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Anrufen", dir: "ltr"
     },
     ru: {
         title: "ALINA Restaurant", tagline: "Кейтеринг и <span>Мероприятия</span>", desc: "Афганский ресторан-буфет ВСЁ, ЧТО ВЫ МОЖЕТЕ СЪЕСТЬ",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Позвонить", dir: "ltr"
+        menu: "Меню Ресторана", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Позвонить", dir: "ltr"
     },
     it: {
         title: "ALINA Restaurant", tagline: "Catering ed <span>Eventi</span>", desc: "Ristorante a Buffet Afgano ALL YOU CAN EAT",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Chiamaci", dir: "ltr"
+        menu: "Menu del Ristorante", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Chiamaci", dir: "ltr"
     },
     da: {
         title: "ALINA Restaurant", tagline: "Catering og <span>Arrangementer</span>", desc: "Afghansk ALL YOU CAN EAT Buffetrestaurant",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Ring til os", dir: "ltr"
+        menu: "Restaurant Menu", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Ring til os", dir: "ltr"
     },
     cs: {
         title: "ALINA Restaurant", tagline: "Catering a <span>Akce</span>", desc: "Afghánská bufetová restaurace ALL YOU CAN EAT",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Zavolejte nám", dir: "ltr"
+        menu: "Jídelní Lístek", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Zavolejte nám", dir: "ltr"
     },
     pl: {
         title: "ALINA Restaurant", tagline: "Catering i <span>Imprezy</span>", desc: "Afgańska restauracja bufetowa ALL YOU CAN EAT",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Zadzwoń", dir: "ltr"
+        menu: "Menu Restauracji", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Zadzwoń", dir: "ltr"
     },
     uk: {
         title: "ALINA Restaurant", tagline: "Кейтеринг та <span>Події</span>", desc: "Афганський ресторан-буфет ВСЕ, ЩО ВИ МОЖЕТЕ З'ЇСТИ",
-        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Зателефонуйте", dir: "ltr"
+        menu: "Меню Ресторану", loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Зателефонуйте", dir: "ltr"
     }
 };
 
@@ -294,6 +303,7 @@ function setLang(lang) {
     document.getElementById('txt-title').innerText = data.title;
     document.getElementById('txt-tagline').innerHTML = data.tagline;
     document.getElementById('txt-desc').innerText = data.desc;
+    document.getElementById('btn-menu').innerText = data.menu;
     document.getElementById('btn-loc').innerText = data.loc;
     document.getElementById('btn-wa').innerText = data.wa;
     document.getElementById('btn-call').innerText = data.call;
