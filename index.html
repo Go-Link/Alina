@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Restaurant Alina</title>
-<link rel="icon" href="https://ik.imagekit.io/AntonMagdy/Icons/.ico" type="image/x-icon">
+<title>ALINA Restaurant</title>
+<link rel="icon" href="https://ik.imagekit.io/GotoLink/Links/Logo.ico" type="image/x-icon">
 <style>
   :root{
   --accent: rgba(255, 255, 255, 0.35); 
@@ -17,7 +17,7 @@ body {
   background: linear-gradient(50deg, #FF9A9E, #FAD0C4, #FFB347, #FFD194, #FFCC99, 
     #BEE1E6, #C2E9FB, #A1C4FD, #89f7fe, #9FACE6);
   background-size: 400% 400%;
-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
   height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -74,20 +74,10 @@ animation: gradient 15s ease infinite;
   .icon{width:22px;height:22px;flex:0 0 22px;fill:#1d4795; display: flex; align-items: center; justify-content: center;}
   .label{flex:1;text-align:center}
 
-.link.facebook:hover { background: rgba(24, 119, 242, 0.2); color: #1877F2; }
-.link.facebook:hover .icon { fill: #1877F2; }
 .link.location:hover { background: rgba(234, 67, 53, 0.2); color: #EA4335; }
 .link.location:hover .icon i { color: #EA4335; }
 .link.whatsapp:hover { background: rgba(37, 211, 102, 0.2); color: #25D366; }
 .link.whatsapp:hover .icon { fill: #25D366; }
-.link.tiktok:hover { background: rgba(0, 0, 0, 0.1); color: #000; }
-.link.tiktok:hover .icon { fill: #000; }
-.link.tripadvisor:hover { background: rgba(52, 224, 161, 0.2); color: #007a14; }
-.link.tripadvisor:hover svg { stroke: #007a14; }
-.link.website:hover { background: rgba(0, 176, 155, 0.1); color: #00b09b; }
-.link.website:hover .icon i { color: #00b09b; }
-.link.instagram:hover { background: rgba(228, 64, 95, 0.1); color: #E4405F; }
-.link.instagram:hover .icon i { color: #E4405F; }
 .link.phone:hover { background: rgba(52, 183, 241, 0.1); color: #34b7f1; }
 .link.phone:hover .icon i { color: #34b7f1; }
 
@@ -111,12 +101,7 @@ animation: gradient 15s ease infinite;
 }
 
 .social-icons a:hover { transform: scale(1.2); }
-.social-icons a.website:hover { color: #00b09b; }
-.social-icons a.tripadvisor:hover { color: #34E0A1; }
-.social-icons a[href*="facebook"]:hover { color: #1877F2; }
-.social-icons a.instagram:hover { color: #E4405F; }
 .social-icons a.location:hover { color: #EA4335; }
-.social-icons a[href*="tiktok"]:hover { color: #000000; }
 .social-icons a[href*="wa.me"]:hover { color: #25D366; }
 .social-icons a.phone:hover { color: #34b7f1; }
 
@@ -131,7 +116,7 @@ animation: gradient 15s ease infinite;
 }
 
 h1 {
-    font-size: 26px; 
+    font-size: 24px; 
     font-weight: 800;
     color: #1d4795; 
     margin-bottom: 5px;
@@ -140,7 +125,7 @@ h1 {
 }
 
 .tagline {
-    font-size: 16px;
+    font-size: 14px;
     color: #444; 
     margin-bottom: 8px;
     font-weight: 500;
@@ -152,9 +137,9 @@ h1 {
 }
 
 .description {
-    font-size: 13px;
+    font-size: 12px;
     color: #666;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     opacity: 0.8;
     position: relative;
@@ -200,5 +185,122 @@ h1 {
 </head>
 <body dir="ltr">
 
+  <div class="wrap">
+    <!-- يمكنك استبدال رابط الصورة الافتراضية برابط شعار المطعم الخاص بك لاحقاً -->
+    <img class="profile-pic" src="https://ik.imagekit.io/GotoLink/Links/LogoAlina.png" alt="ALINA Restaurant" />
+    
+    <div class="info-section">
+        <h1 id="txt-title">ALINA Restaurant</h1>
+        <p class="tagline" id="txt-tagline">Catering and <span>Events</span></p>
+        <p class="description" id="txt-desc">Afghan ALL YOU CAN EAT Buffet Restaurant</p>
+    </div>
+
+    <!-- أزرار اللغات -->
+    <div class="lang-container">
+        <button class="lang-btn" onclick="setLang('nl')"><img src="https://flagcdn.com/w40/nl.png"><span>NL</span></button>
+        <button class="lang-btn" onclick="setLang('en')"><img src="https://flagcdn.com/w40/gb.png"><span>EN</span></button>
+        <button class="lang-btn" onclick="setLang('ar')"><img src="https://flagcdn.com/w40/eg.png"><span>AR</span></button>
+        <button class="lang-btn" onclick="setLang('fr')"><img src="https://flagcdn.com/w40/fr.png"><span>FR</span></button>
+        <button class="lang-btn" onclick="setLang('de')"><img src="https://flagcdn.com/w40/de.png"><span>DE</span></button>
+        <button class="lang-btn" onclick="setLang('ru')"><img src="https://flagcdn.com/w40/ru.png"><span>RU</span></button>
+        <button class="lang-btn" onclick="setLang('it')"><img src="https://flagcdn.com/w40/it.png"><span>IT</span></button>
+        <button class="lang-btn" onclick="setLang('da')"><img src="https://flagcdn.com/w40/dk.png"><span>DA</span></button>
+        <button class="lang-btn" onclick="setLang('cs')"><img src="https://flagcdn.com/w40/cz.png"><span>CS</span></button>
+        <button class="lang-btn" onclick="setLang('pl')"><img src="https://flagcdn.com/w40/pl.png"><span>PL</span></button>
+        <button class="lang-btn" onclick="setLang('uk')"><img src="https://flagcdn.com/w40/ua.png"><span>UK</span></button>
+    </div>
+
+    <nav class="links">
+      
+      <a class="link location" href="https://maps.app.goo.gl/qW8ZFaekXdQZF2su5?g_st=aw" target="_blank" rel="noopener noreferrer">
+          <div class="icon"><i class="fas fa-location-dot"></i></div>
+          <span class="label" id="btn-loc">Nieuwstraat 7, Berkel en Rodenrijs</span>
+      </a>
+
+      <a class="link whatsapp" href="https://wa.me/+31687127874" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp icon" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+        <span class="label" id="btn-wa">WhatsApp</span>
+      </a>
+
+      <a class="link phone" href="tel:+31687127874">
+        <div class="icon"><i class="fas fa-phone"></i></div>
+        <span class="label" id="btn-call">Call Us</span>
+      </a>
+
+    </nav>
+
+    <div class="social-icons">
+        <a href="https://maps.app.goo.gl/qW8ZFaekXdQZF2su5?g_st=aw" target="_blank"><i class="fas fa-location-dot"></i></a>
+        <a href="https://wa.me/+31687127874" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+31687127874"><i class="fas fa-phone"></i></a>
+    </div>
+
+	<footer class="footer">
+	  <p>© <span id="year"></span>GoLink Design</p>
+	  <p><a href="https://wa.me/+201281358100" target="_blank">Contact Creator</a></p>
+	</footer>
+  </div>
+
+<script>
+const translations = {
+    nl: {
+        title: "ALINA Restaurant", tagline: "Catering en <span>Evenementen</span>", desc: "Afghaans ALL YOU CAN EAT Buffet Restaurant",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Bel Ons", dir: "ltr"
+    },
+    en: {
+        title: "ALINA Restaurant", tagline: "Catering and <span>Events</span>", desc: "Afghan ALL YOU CAN EAT Buffet Restaurant",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Call Us", dir: "ltr"
+    },
+    ar: {
+        title: "مطعم ألينا", tagline: "كاترينج <span>ومناسبات</span>", desc: "بوفيه مفتوح للمأكولات الأفغانية - كُل ما تشتهي",
+        loc: "نيو ستريت 7، بيركل إن رودنريس", wa: "واتساب", call: "اتصل بنا", dir: "rtl"
+    },
+    fr: {
+        title: "ALINA Restaurant", tagline: "Restauration et <span>Événements</span>", desc: "Restaurant Buffet Afghan À VOLONTÉ",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Appelez-nous", dir: "ltr"
+    },
+    de: {
+        title: "ALINA Restaurant", tagline: "Catering und <span>Events</span>", desc: "Afghanisches ALL YOU CAN EAT Buffet Restaurant",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Anrufen", dir: "ltr"
+    },
+    ru: {
+        title: "ALINA Restaurant", tagline: "Кейтеринг и <span>Мероприятия</span>", desc: "Афганский ресторан-буфет ВСЁ, ЧТО ВЫ МОЖЕТЕ СЪЕСТЬ",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Позвонить", dir: "ltr"
+    },
+    it: {
+        title: "ALINA Restaurant", tagline: "Catering ed <span>Eventi</span>", desc: "Ristorante a Buffet Afgano ALL YOU CAN EAT",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Chiamaci", dir: "ltr"
+    },
+    da: {
+        title: "ALINA Restaurant", tagline: "Catering og <span>Arrangementer</span>", desc: "Afghansk ALL YOU CAN EAT Buffetrestaurant",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Ring til os", dir: "ltr"
+    },
+    cs: {
+        title: "ALINA Restaurant", tagline: "Catering a <span>Akce</span>", desc: "Afghánská bufetová restaurace ALL YOU CAN EAT",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Zavolejte nám", dir: "ltr"
+    },
+    pl: {
+        title: "ALINA Restaurant", tagline: "Catering i <span>Imprezy</span>", desc: "Afgańska restauracja bufetowa ALL YOU CAN EAT",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Zadzwoń", dir: "ltr"
+    },
+    uk: {
+        title: "ALINA Restaurant", tagline: "Кейтеринг та <span>Події</span>", desc: "Афганський ресторан-буфет ВСЕ, ЩО ВИ МОЖЕТЕ З'ЇСТИ",
+        loc: "Nieuwstraat 7, Berkel en Rodenrijs", wa: "WhatsApp", call: "Зателефонуйте", dir: "ltr"
+    }
+};
+
+function setLang(lang) {
+    const data = translations[lang];
+    document.getElementById('txt-title').innerText = data.title;
+    document.getElementById('txt-tagline').innerHTML = data.tagline;
+    document.getElementById('txt-desc').innerText = data.desc;
+    document.getElementById('btn-loc').innerText = data.loc;
+    document.getElementById('btn-wa').innerText = data.wa;
+    document.getElementById('btn-call').innerText = data.call;
+    document.body.dir = data.dir;
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
